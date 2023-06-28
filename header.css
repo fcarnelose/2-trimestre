@@ -43,6 +43,7 @@ display: inline-block;
 
 .lista-menu__titulo{
     color: var(--laranja);
+    font-weight: 700;
 }
 
 .lista-menu__link{
@@ -53,3 +54,6 @@ display: inline-block;
     text-transform: uppercase;
 }
 
+.conteiner__botao{
+   display: none; 
+}
