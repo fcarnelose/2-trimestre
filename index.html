@@ -67,27 +67,51 @@
     <!-- Slider main container -->
 <div class="swiper">
   <!-- Additional required wrapper -->
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+  
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide"><img src="./ApacheKafka.svg" alt="Livro sobre apache Kafka"></div>
     <div class="swiper-slide"><img src="./Javascript.svg" alt="Livro sobre JavaScript"></div>
     <div class="swiper-slide"><img src="./Portugol.svg" alt="Livro sobre Portugol"></div>
-    ...
+    <div class="swiper-slide"><img src="./Acessibilidade.svg" alt="Livro Acessibilidade"></div>
+    <div class="swiper-slide"><img src="./Angular.svg" alt="livro Angular"></div>
+    <div class="swiper-slide"><img src="./Arquitetura.svg" alt="Livro arquitetura"></div>
+    <div class="swiper-slide"><img src="./Construct2.svg" alt="livro Construct"></div>
+    <div class="swiper-slide"><img src="./Gestão.svg" alt="livro Gestão"></div>
+    <div class="swiper-slide"><img src="./Guia Front-end.svg" alt="livro Front-end"></div>
+    <div class="swiper-slide"><img src="./Liderança.svg" alt="livro Liderança"></div>
+    <div class="swiper-slide"><img src="./MEAN.svg" alt="livro MEAN"></div>
+    <div class="swiper-slide"><img src="./MetricasAgeis.svg" alt="livro Metricas Ageis"></div>
+    <div class="swiper-slide"><img src="./Nodejs.svg" alt="livro Node js"></div>
+    <div class="swiper-slide"><img src="./ReactNative.svg" alt="livro React native"></div>
+    <div class="swiper-slide"><img src="./Tuning.svg" alt="livro tuning"></div>
+    <div class="swiper-slide"><img src="./UX.svg" alt="livro UX"></div>
+
   </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
+  
 
   <!-- If we need navigation buttons -->
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
 
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
+  
 </div>
  </section>
 
 
  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+ <script>
+    const swiper = new Swiper('.swiper', {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    pagination: {
+      el:'.swiper-pagination',
+      type: 'bullets',
+    }
+      });
+ </script>
 
 
 </body>
